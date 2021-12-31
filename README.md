@@ -1,28 +1,27 @@
 # Webpack Express With Sass Example App
+A webpack express with Sass example application that evaluates a news article by NLP using meaningCloud API 
+"https://api.meaningcloud.com/sentiment-2.1?"
+the response of the API is a long list of analysis for the articles but to keep it short we show the following parameters only:
+Subjectivity
+Agreement 
+irony
+confidence 
+This project is originally forked from https://github.com/udacity/fend-webpack-sass
+and under the Udacity Advanced Front end development course
 
-The goal of this repo is be an example of a basic but functional app built on Express and Webpack.
 
-If you want to follow along, start from branch 0-initial-setup. Each branch in this project is a step along the path to creating a fully functional webpack setup. In each branch, there will be a documentation file that lists out the steps taken in that branch (each step is also roughly a git commit if you look at the history) which you can use as a checklist when setting up your own projects. 
+## Running
 
-## What we will cover
+create an account on meaningCloud -obtain your License KEY from 
+https://www.meaningcloud.com/developer/account/subscriptions
 
-We will cover:
+create a .env file and fill it in this format 
+KEY = ***** 
 
-- Transpiling Sass to CSS using Webpack
-- Fixing Javascript event errors
-- Building a better production config for Webpack
-- Adding Service Workers to our app using Webpack
-
-## Get Up and Running
-
-Fork this repo, then clone the branch of your choice from your forked repo down to your computer:
-
-```
-git clone -- git@github.com:[your-user-name]/webpack-express.git --
-```
-
-`cd` into your new folder and run:
+run:
 - ```npm install```
 - ```npm run build-dev``` to start the webpack dev server
 - ```npm run build-prod``` to generate a dist folder for prod
 - ```npm start``` to run the Express server on port 8081
+
+## Testing
