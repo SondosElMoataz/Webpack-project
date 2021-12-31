@@ -25,3 +25,5 @@ run:
 - ```npm start``` to run the Express server on port 8081
 
 ## Testing
+
+the project is tested using JEST 
